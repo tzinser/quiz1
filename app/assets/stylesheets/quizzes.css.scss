@@ -5,7 +5,7 @@
 	font-family: sans-serif;
 }
 
-h1 {
+h1, h2 {
 	color: blue;
 }
 
@@ -15,7 +15,10 @@ h3 {
 
 p {
 	padding: 25px 0 0 25px;
+}
 
+.list {
+	padding: 0;
 }
 
 .center {

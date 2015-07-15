@@ -11,10 +11,12 @@
 			an application in RoR.  My initial thought was to create this without using the --database= property, but soon discovered the creation process was looking for the sql database.  Apparently you can modify the environment.rb file to comment the config.framework value, will have to experiment later.   </p>
 	</div>
 	<div>
-		<p> Quiz 2: Establish model and database: 
-		<% @quizzes.each do |quiz| %>
-			<h1><%= quiz.lastname %>, <%= quiz.firstname %></h1>
-		<% end %>
-		</p>
-
+		<p> Quiz 2: Establish model and database: </p>
+		<div class="center">
+			<h2>Quiz Participant List</h2>
+			<% @quizzes.each do |quiz| %>
+				<p class="list"><%= quiz.lastname %>, <%= quiz.firstname %></p>
+			<% end %>
+		</div>
+		<%= link_to 'Add new quiz participant', new_quiz_path %>
 	</div>
