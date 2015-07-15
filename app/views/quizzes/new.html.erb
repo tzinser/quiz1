@@ -1,0 +1,9 @@
+<h1>Enter your name: </h1>
+<br />
+<%= simple_form_for @quiz do |f| %>
+	<%= f.input :lastname %>
+	<br />
+	<%= f.input :firstname %>
+	<br />
+	<%= f.submit 'Create' %>
+<% end %>
